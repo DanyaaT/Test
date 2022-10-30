@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView{
             ScrollView{
         VStack{
-        Text("first push test")
+        Text("second push test")
             .padding()
         }
         .navigationTitle("My Team")
