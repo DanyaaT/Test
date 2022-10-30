@@ -11,6 +11,7 @@
 		1D1C3C8D290EED01009AEDDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1C3C8C290EED01009AEDDF /* ContentView.swift */; };
 		1D1C3C8F290EED05009AEDDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1C3C8E290EED05009AEDDF /* Assets.xcassets */; };
 		1D1C3C92290EED05009AEDDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D1C3C91290EED05009AEDDF /* Preview Assets.xcassets */; };
+		1D1C3C99290F3AA9009AEDDF /* filePushingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1C3C98290F3AA9009AEDDF /* filePushingTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		1D1C3C8C290EED01009AEDDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1D1C3C8E290EED05009AEDDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D1C3C91290EED05009AEDDF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1D1C3C98290F3AA9009AEDDF /* filePushingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filePushingTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				1D1C3C8A290EED01009AEDDF /* newNvigationApp.swift */,
 				1D1C3C8C290EED01009AEDDF /* ContentView.swift */,
+				1D1C3C98290F3AA9009AEDDF /* filePushingTest.swift */,
 				1D1C3C8E290EED05009AEDDF /* Assets.xcassets */,
 				1D1C3C90290EED05009AEDDF /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1C3C99290F3AA9009AEDDF /* filePushingTest.swift in Sources */,
 				1D1C3C8D290EED01009AEDDF /* ContentView.swift in Sources */,
 				1D1C3C8B290EED01009AEDDF /* newNvigationApp.swift in Sources */,
 			);
