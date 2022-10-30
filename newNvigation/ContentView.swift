@@ -15,7 +15,7 @@ struct ContentView: View {
         Text("second push test")
             .padding()
         }
-        .navigationTitle("My Team")
+        .navigationTitle("Sara is pushing")
         .toolbar{
             ToolbarItem(placement:.navigationBarTrailing ){
             
