@@ -8,37 +8,51 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var name = ""
+    @State var logOut = false
     var body: some View {
-        NavigationView{
-            ScrollView{
-        VStack{
-        Text("Danya is pushing test")
-            .padding()
-        }
-        .navigationTitle("Sara is pushing")
-        .toolbar{
-            ToolbarItem(placement:.navigationBarTrailing ){
+  
             
-                NavigationLink {
-                   Text("hi")
-                } label: {
-                    Image(systemName: "person.crop.circle")
-                        .font(.largeTitle)
-                        .foregroundColor(.blue)
+     
+         
+           
+        VStack{
+            
+            HStack{
+                Button(action: {}){
+              Text("test")
+                        .font(.title.bold()).foregroundColor(.black)
+                    
+                    Image(systemName: "chevron.down").font(.title2.bold()).foregroundColor(.black)
                 }
+              Spacer()
+              NavigationLink(destination: newPage()){
+                Image(systemName: "person.2.circle")
+                  .font(.largeTitle)
+                 
+              }
+                NavigationLink {
+                  Text("Person View")
+                } label: {
+                  Image(systemName: "bell.circle")
+                    .font(.largeTitle)
+               
+                }
+
             }
-            ToolbarItem(){
-                Image(systemName: "bell.fill").font(.title2)
-                    .foregroundColor(.yellow)
-            }
-            ToolbarItem(placement: .navigationBarLeading){
-                Image(systemName: "person.2.circle").font(.largeTitle)
-                    .foregroundColor(.red)
-            }
-        }
-            }
-        }
+           
+
+            
+
+
+           Spacer()
+    
+        }.padding()
     }
+       
+    
+    
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
