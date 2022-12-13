@@ -10,44 +10,38 @@ import SwiftUI
 struct ContentView: View {
     @State var name = ""
     @State var logOut = false
+    @State var selectedCourse = ""
+    @State var courses = ["s", "d","f"]
     var body: some View {
   
             
      
-         
+        NavigationView{
            
         VStack{
             
-            HStack{
-                Button(action: {}){
-              Text("test")
-                        .font(.title.bold()).foregroundColor(.black)
-                    
-                    Image(systemName: "chevron.down").font(.title2.bold()).foregroundColor(.black)
-                }
-              Spacer()
-              NavigationLink(destination: newPage()){
-                Image(systemName: "person.2.circle")
-                  .font(.largeTitle)
-                 
-              }
-                NavigationLink {
-                  Text("Person View")
-                } label: {
-                  Image(systemName: "bell.circle")
-                    .font(.largeTitle)
-               
-                }
+            Form{
+                Section{
 
+                    Picker(selection: $selectedCourse, label: Text("اسم المادة")){
+
+                                    ForEach(0..<courses.count){
+
+                                                Text(self.courses[$0]).tag($0)
+
+                                    }
+
+                                }
+
+                                        
+
+                }.navigationBarTitle("g")
+
+                                
             }
-           
-
             
-
-
-           Spacer()
-    
         }.padding()
+      }
     }
        
     
